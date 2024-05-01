@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #787b7e;
+}
+
+/* .header a {
+    color: white;
+} */
+
+.headerLink {
+    color: white;
+}
+
+.activeLink {
+    color: blue;
+}

@@ -1,6 +1,6 @@
 export type PokemonData = {
     name: string;
-    url: string;
+    // url: string;
 };
 
 export type PokemonResponse = {

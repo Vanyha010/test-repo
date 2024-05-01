@@ -1,11 +1,21 @@
+import { Routes, Route } from 'react-router-dom';
+
+import SearchPage from './pages/SearchPage';
 import './App.css';
-import PokemonList from './components/PokemonList';
-// import axios from 'axios';
+import { AboutPage } from './pages/AboutPage';
+import { HomePage } from './pages/HomePage';
+import { Layout } from './components/Layout/Layout';
 
 export default function App() {
     return (
         <>
-            <PokemonList></PokemonList>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<HomePage />}></Route>
+                    <Route path="/search" element={<SearchPage />}></Route>
+                    <Route path="/about" element={<AboutPage />}></Route>
+                </Route>
+            </Routes>
         </>
     );
 }
