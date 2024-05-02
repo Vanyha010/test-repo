@@ -15,5 +15,5 @@ export default defineConfig({
             usePolling: true,
         },
     },
-    base: '/test-repo',
+    // base: '/test-repo',
 });
